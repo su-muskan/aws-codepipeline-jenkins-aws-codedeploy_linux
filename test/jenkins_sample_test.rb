@@ -7,7 +7,7 @@ require 'socket'
 class JenkinsSampleTest < MiniTest::Unit::TestCase
   def setup
     uri_params = {
-      :host => ENV['TEST_IP_ADDRESS'] || 'localhost',
+      :host => ENV['TEST_IP_ADDRESS'] || '52.20.126.40',
       :port => (ENV['TEST_PORT'] || '80').to_i,
       :path => '/index.html'
     }
